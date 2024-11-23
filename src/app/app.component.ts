@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { datatype } from './file';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'model';
+  getData: datatype = {
+    name: "AsadUllah",
+    id: 100,
+    pakistani: true,
+    address: "Skp 345 punjab"
+  }
 }

@@ -5,7 +5,7 @@ import { SignupComponent } from './signup/signup.component'
 
 const routes: Routes = [
   {
-    path: 'admin', children: [
+    path: 'manager', children: [
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignupComponent }
     ]
@@ -16,4 +16,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AdminRoutingModule { }
+export class ManagerRoutingModule { }
